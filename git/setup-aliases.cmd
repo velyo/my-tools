@@ -22,13 +22,10 @@ REM push a new local branch to the upstream [usage: git put BB-0000]
 git config --global alias.put "push --set-upstream origin"
 
 REM rollback the last commit [usage: git rollback]
-git config --global alias.rollback "reset --soft HEAD~"
+git config --global alias.uc "reset --soft HEAD~"
+
+REM unstage the added changes [usage: git unstage]
+git config --global alias.us "reset HEAD --"
 
 REM decorated log [usage: git lga]
 git config --global alias.lga "log --graph --oneline --all --decorate"
-
-REM uncommit the last commit [usage: git uncommit]
-git config --global alias.uncommit "reset HEAD~"
-
-REM unstage the added changes [usage: git unstage]
-git config --global alias.unstage "reset HEAD --"
